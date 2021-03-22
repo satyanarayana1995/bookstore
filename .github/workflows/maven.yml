@@ -28,3 +28,7 @@ jobs:
       with:
         name: target
         path: target/*
+     
+    - uses: actions/checkout@v2    
+    - name: Docker-build
+      run: docker build -t bookapp .
