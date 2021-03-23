@@ -27,7 +27,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: target
-        path: bookstore/target/*
+        path: /
      
     - uses: actions/checkout@v2    
     - name: Docker-build
