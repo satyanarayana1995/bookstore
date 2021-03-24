@@ -27,6 +27,6 @@ jobs:
     - name: Docker-images
       run: docker images 
     - name: Docker-run
-      run: docker run -it -p 8080:8080 f4f7df7d585f 
+      run: docker run -i -p 8080:8080 f4f7df7d585f 
       
     
