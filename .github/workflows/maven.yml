@@ -22,10 +22,13 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Docker-build
-      run: docker build -t bookapp .
-    - name: Docker-images
-      run: docker images 
     
-      
+    
+  package:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Docker-build
+     run: docker build -t bookapp .
+   - name: Docker-images
+     run: docker images   
     
