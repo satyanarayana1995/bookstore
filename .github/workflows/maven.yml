@@ -27,6 +27,8 @@ jobs:
   package:
    runs-on: ubuntu-latest
    steps:
+   - name: Sample
+     run: pwd
    - name: Docker-build
      run: docker build -t bookapp .
    - name: Docker-images
