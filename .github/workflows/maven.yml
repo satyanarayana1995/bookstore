@@ -26,6 +26,7 @@ jobs:
       run: docker build -t bookapp .
     - name: Docker-images
       run: docker images 
-           docker run -it -p 8080:8080 f4f7df7d585f
+    - name: Docker-run
+      run: docker run -it -p 8080:8080 f4f7df7d585f 
       
     
