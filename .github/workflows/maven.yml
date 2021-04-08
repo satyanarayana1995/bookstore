@@ -27,10 +27,7 @@ jobs:
       with:
         name: code-coverage-report
         path: target/*war
-    - name: Download a single artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: code-coverage-report
+  
     
     
   package:
@@ -38,6 +35,10 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - uses: actions/checkout@v2
+   - name: Download a single artifact
+     uses: actions/download-artifact@v2
+     with:
+      name: code-coverage-report
    - name: Sample
      run:  |
       pwd
