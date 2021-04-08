@@ -38,6 +38,8 @@ jobs:
      run:  |
       pwd
       ls -ltr
+      cd OnlineBookStore
+      ls -ltr
    - name: Docker-build
      run: docker build -t bookapp .
    - name: Docker-images
