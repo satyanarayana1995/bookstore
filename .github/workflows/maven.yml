@@ -27,6 +27,7 @@ jobs:
   package:
    runs-on: ubuntu-latest
    steps:
+   - uses: actions/checkout@v2
    - name: Sample
      run:  ls -a
    - name: Docker-build
