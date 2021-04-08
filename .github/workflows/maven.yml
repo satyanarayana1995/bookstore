@@ -35,7 +35,9 @@ jobs:
    steps:
    - uses: actions/checkout@v2
    - name: Sample
-     run:  ls -a
+     run:  |
+      pwd
+      ls -ltr
    - name: Docker-build
      run: docker build -t bookapp .
    - name: Docker-images
